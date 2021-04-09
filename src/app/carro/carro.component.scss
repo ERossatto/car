@@ -1,0 +1,44 @@
+
+.section {
+  height: 100vh;
+  background-color: green;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .street {
+    height: 8rem;
+    width: 100vw;
+    background-color: #3d4147;
+    border-top: .5rem;
+    border-color: white;
+
+    &__line {
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .line {
+        width: 2rem;
+        height: .125rem;
+        background-color: yellow;
+      }
+    }
+  }
+
+  .carro {
+    position: relative; //gambiarra
+    top: -53px; //gambiarra
+
+    width: 10rem;
+    transform: scaleX(-1);
+  }
+
+  .button {
+    margin-top: 5rem;
+  }
+
+}
